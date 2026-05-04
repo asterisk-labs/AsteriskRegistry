@@ -1,0 +1,6 @@
+name = "AsteriskRegistry"
+uuid = "c43a40f5-dd64-4479-990d-faf8365579dd"
+repo = "https://github.com/asterisk-labs/AsteriskRegistry"
+description = "Asterisk Labs registry for Julia packages."
+
+[packages]
