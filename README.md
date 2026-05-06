@@ -1,8 +1,6 @@
 # AsteriskRegistry
 
-Julia package registry for [Asterisk Labs](https://asterisk.coop), the UK's first worker-owned cooperative research lab focused on deep learning, Earth observation, and climate science.
-
-This registry hosts Julia packages developed by Asterisk Labs that are not (yet) part of the General registry.
+Julia package registry for [Asterisk Labs](https://asterisk.coop).
 
 ## Add the registry
 
