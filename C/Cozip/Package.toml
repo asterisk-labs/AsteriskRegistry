@@ -1,4 +1,4 @@
 name = "Cozip"
 uuid = "7c91d8e4-3f2a-4b6c-9d18-2e5f7a8b3c4d"
-repo = "https://github.com/asterisk-labs/taco.git"
-subdir = "cozip/julia"
+repo = "https://github.com/asterisk-labs/cozip.git"
+subdir = "julia"
