@@ -1,0 +1,6 @@
+["2026.5.16-2026"]
+DBInterface = "2"
+DataFrames = "1"
+DuckDB = "1"
+Tables = "1"
+julia = "1.10.0-1"
