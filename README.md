@@ -15,9 +15,10 @@ Once added, packages from this registry can be installed with `Pkg.add` like any
 
 | Package | Description | Source |
 | ------- | ----------- | ------ |
-| [`Cozip`](https://github.com/asterisk-labs/taco/tree/main/cozip/julia) | Julia bindings for `libcozip`, a writer for the Cloud-Optimized ZIP (cozip) format | `asterisk-labs/taco` |
+| [`Cozip`](https://github.com/asterisk-labs/cozip/tree/main/julia) | Write Cloud-Optimized ZIP archives | `asterisk-labs/cozip` |
+| [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `asterisk-labs/taco` |
 
-Precompiled native binaries for `libcozip` are distributed via [`Cozip_jll`](https://github.com/asterisk-labs/taco/releases) using `Artifacts.toml` with SHA256 verification.
+Precompiled native binaries for `libcozip` are distributed via [`Cozip_jll`](https://github.com/asterisk-labs/cozip/releases).
 
 ## Install a package
 

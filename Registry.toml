@@ -4,4 +4,5 @@ repo = "https://github.com/asterisk-labs/AsteriskRegistry"
 description = "Asterisk Labs registry for Julia packages."
 
 [packages]
+3d6f1a92-7b48-4e05-9c31-6a2f8d5b7e14 = { name = "Taco", path = "T/Taco" }
 7c91d8e4-3f2a-4b6c-9d18-2e5f7a8b3c4d = { name = "Cozip", path = "C/Cozip" }

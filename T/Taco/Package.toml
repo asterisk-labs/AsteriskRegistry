@@ -1,0 +1,4 @@
+name = "Taco"
+uuid = "3d6f1a92-7b48-4e05-9c31-6a2f8d5b7e14"
+repo = "https://github.com/asterisk-labs/taco.git"
+subdir = "julia"
