@@ -16,6 +16,7 @@ Once added, packages from this registry can be installed with `Pkg.add` like any
 | Package | Description | Source |
 | ------- | ----------- | ------ |
 | [`Cozip`](https://github.com/asterisk-labs/cozip/tree/main/julia) | Write Cloud-Optimized ZIP archives | `asterisk-labs/cozip` |
+| [`GeoZL`](https://github.com/asterisk-labs/geozl/tree/main/bindings/julia) | Compress raster tiles with GeoZL codecs for OpenZL | `asterisk-labs/geozl` |
 | [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `asterisk-labs/taco` |
 
 Precompiled native binaries for `libcozip` are distributed via [`Cozip_jll`](https://github.com/asterisk-labs/cozip/releases).
