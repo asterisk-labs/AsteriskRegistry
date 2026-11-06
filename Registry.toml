@@ -7,3 +7,4 @@ description = "Asterisk Labs registry for Julia packages."
 3d6f1a92-7b48-4e05-9c31-6a2f8d5b7e14 = { name = "Taco", path = "T/Taco" }
 7c91d8e4-3f2a-4b6c-9d18-2e5f7a8b3c4d = { name = "Cozip", path = "C/Cozip" }
 e52aded2-0fd2-4544-9046-a0526ea1415a = { name = "GeoZL", path = "G/GeoZL" }
+e57b8a90-50c7-4f24-a2ed-d34f8b832d18 = { name = "Rumi", path = "R/Rumi" }

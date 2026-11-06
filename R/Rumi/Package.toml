@@ -1,0 +1,4 @@
+name = "Rumi"
+uuid = "e57b8a90-50c7-4f24-a2ed-d34f8b832d18"
+repo = "https://github.com/asterisk-labs/rumi.git"
+subdir = "bindings/julia"
