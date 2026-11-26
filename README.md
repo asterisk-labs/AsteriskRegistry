@@ -13,35 +13,42 @@ Once added, packages from this registry can be installed with `Pkg.add` like any
 
 ## Available packages
 
-| Package | Description | Source |
-| ------- | ----------- | ------ |
-| [`Cozip`](https://github.com/asterisk-labs/cozip/tree/main/julia) | Write Cloud-Optimized ZIP archives | `asterisk-labs/cozip` |
-| [`GeoZL`](https://github.com/asterisk-labs/geozl/tree/main/bindings/julia) | Compress raster tiles with GeoZL codecs for OpenZL | `asterisk-labs/geozl` |
-| [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `asterisk-labs/taco` |
+| Package | Description | Latest | Source |
+| ------- | ----------- | ------ | ------ |
+| [`Cozip`](https://github.com/asterisk-labs/cozip/tree/main/julia) | Write Cloud-Optimized ZIP archives | `2026.11.23` | `asterisk-labs/cozip` |
+| [`GeoZL`](https://github.com/asterisk-labs/geozl/tree/main/bindings/julia) | Compress raster tiles with GeoZL codecs for OpenZL | `0.31.0` | `asterisk-labs/geozl` |
+| [`Rumi`](https://github.com/asterisk-labs/rumi/tree/main/bindings/julia) | Read and write Rumi Image and Cube files | `0.29.0` | `asterisk-labs/rumi` |
+| [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `0.10.1` | `asterisk-labs/taco` |
 
-Precompiled native binaries for `libcozip` are distributed via [`Cozip_jll`](https://github.com/asterisk-labs/cozip/releases).
+Precompiled native libraries are downloaded as Julia artifacts from each project's GitHub releases.
 
 ## Install a package
 
 ```julia
-pkg> add Cozip
+pkg> add Cozip GeoZL Rumi Taco
 ```
 
 ```julia
 julia> using Cozip
 julia> Cozip.cozip_version()
-"2026.5.2"
 ```
 
 ## For maintainers
 
-New versions are registered with [LocalRegistry.jl](https://github.com/GunnarFarneback/LocalRegistry.jl) from the source monorepo.
+New versions are registered with [LocalRegistry.jl](https://github.com/GunnarFarneback/LocalRegistry.jl) from each source repository.
 
-From the monorepo root:
+| Package | Julia project path |
+| ------- | ------------------ |
+| `Cozip` | `cozip/julia` |
+| `GeoZL` | `geozl/bindings/julia` |
+| `Rumi` | `rumi/bindings/julia` |
+| `Taco` | `taco/julia` |
+
+For example, from the `cozip` repository root:
 
 ```julia
 using Pkg
-Pkg.develop(path = abspath("cozip/julia"))
+Pkg.develop(path = abspath("julia"))
 
 using LocalRegistry
 register("Cozip"; registry = "AsteriskRegistry", push = true)
@@ -54,7 +61,7 @@ cd ~/.julia/registries/AsteriskRegistry
 git push
 ```
 
-After registration, verify that `C/Cozip/{Package,Versions,Deps,Compat}.toml` and the updated entry in the root `Registry.toml` are present in this repo.
+After registration, verify that `<Letter>/<Package>/{Package,Versions,Deps,Compat}.toml` and the updated entry in the root `Registry.toml` are present in this repo, and bump the `Latest` column above.
 
 ## License
 
