@@ -18,7 +18,7 @@ Once added, packages from this registry can be installed with `Pkg.add` like any
 | [`Cozip`](https://github.com/asterisk-labs/cozip/tree/main/julia) | Write Cloud-Optimized ZIP archives | `2026.11.23` | `asterisk-labs/cozip` |
 | [`GeoZL`](https://github.com/asterisk-labs/geozl/tree/main/bindings/julia) | Compress raster tiles with GeoZL codecs for OpenZL | `0.31.0` | `asterisk-labs/geozl` |
 | [`Rumi`](https://github.com/asterisk-labs/rumi/tree/main/bindings/julia) | Read and write Rumi Image and Cube files | `0.29.0` | `asterisk-labs/rumi` |
-| [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `0.10.1` | `asterisk-labs/taco` |
+| [`Taco`](https://github.com/asterisk-labs/taco/tree/main/julia) | Read TACO datasets | `0.15.0` | `asterisk-labs/taco` |
 
 Precompiled native libraries are downloaded as Julia artifacts from each project's GitHub releases.
 
