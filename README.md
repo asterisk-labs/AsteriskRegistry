@@ -6,8 +6,12 @@ Julia package registry for [Asterisk Labs](https://asterisk.coop).
 
 ```julia
 using Pkg
+Pkg.Registry.add("General")
 Pkg.Registry.add(RegistrySpec(url = "https://github.com/asterisk-labs/AsteriskRegistry"))
 ```
+
+The packages depend on packages in the General registry. A new Julia installs General on
+its first `Pkg.add`, but not once another registry has been added, so add it first.
 
 Once added, packages from this registry can be installed with `Pkg.add` like any other Julia package.
 
